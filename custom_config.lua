@@ -7,7 +7,7 @@ local M = {}
 -- options put here will override or add on to the default options
 M.options = {
   opt = {
-    autochdir = true,
+    autochdir = false, -- deprecated, breaks with some plugins, config.autocommands fixes this
     breakindent = true,
     breakindentopt = "shift:2,min:40,sbr",
     clipboard = "unnamedplus",
