@@ -152,7 +152,7 @@ M.formatting_servers = {
 }
 
 -- Set any to false that you want disabled in here.
--- take a look at the autocommands file in lua/core for more information
+-- take a look at the autocommands file in lua/config for more information
 -- Default value is true if left blank
 M.autocommands = {
   alpha_folding = true,
@@ -172,14 +172,12 @@ M.enable_plugins = {
   autotag = true,
   bufferline = true,
   context = true,
-  copilot = true,
-  dressing = true,
   gitsigns = true,
   hop = true,
   img_clip = true,
   indent_blankline = true,
   lsp = true,
-  neodev = true,
+  lazydev = true,
   neoscroll = true,
   neotree = true,
   session_manager = true,
@@ -187,10 +185,8 @@ M.enable_plugins = {
   null_ls = true,
   autopairs = true,
   cmp = true,
-  colorizer = true,
   dap = true,
   notify = true,
-  surround = true,
   treesitter = true,
   ufo = true,
   astrotheme = true,
