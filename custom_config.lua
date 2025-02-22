@@ -283,11 +283,12 @@ M.lsp_configs = {
     cmd = { "basedpyright-langserver", "--stdio" },
     filetypes = { "python" },
     settings = {
-      python = {
+      basedpyright = {
         analysis = {
           autoSearchPaths = true,
           diagnosticMode = "openFilesOnly",
           useLibraryCodeForTypes = true,
+          typeCheckingMode = "standard",
         },
       },
     },
@@ -310,13 +311,13 @@ M.custom_conf = function()
   utils.notify_info("Here be dragons! Fear is the mind killer.", "<==> Lusus Naturae <==>")
 
   -- set color scheme
-  -- utils.colorscheme("catppuccin")
-  -- utils.colorscheme("tokyonight")
-  -- utils.colorscheme("nightfox")
-  -- utils.colorscheme("astrotheme")
-  -- utils.colorscheme("astromars")
-  -- utils.colorscheme("monokai-pro-machine")
-  -- utils.colorscheme("monokai-pro-octagon")
+  -- utils.colors("catppuccin")
+  -- utils.colors("tokyonight")
+  -- utils.colors("nightfox")
+  -- utils.colors("astrotheme")
+  -- utils.colors("astromars")
+  -- utils.colors("monokai-pro-machine")
+  -- utils.colors("monokai-pro-octagon")
 
   -- windline statusbar
   -- require("wlsample.evil_line")
