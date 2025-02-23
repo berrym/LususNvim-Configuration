@@ -151,6 +151,60 @@ M.formatting_servers = {
   },
 }
 
+-- add treesitter parsers
+M.treesitter_ensure_installed = {
+  "asm",
+  "bash",
+  "c",
+  "cmake",
+  "comment",
+  "cpp",
+  "css",
+  "csv",
+  "cuda",
+  "diff",
+  "disassembly",
+  "dockerfile",
+  "xml",
+  "gitattributes",
+  "gitcommit",
+  "gitignore",
+  "glsl",
+  "go",
+  "gomod",
+  "gosum",
+  "haskell",
+  "html",
+  "hyprlang",
+  "java",
+  "javascript",
+  "jsdoc",
+  "json",
+  "json5",
+  "jsonc",
+  "latex",
+  "lua",
+  "luap",
+  "luau",
+  "make",
+  "markdown",
+  "meson",
+  "ninja",
+  "objdump",
+  "printf",
+  "python",
+  "regex",
+  "ron",
+  "ruby",
+  "rust",
+  "scss",
+  "toml",
+  "tsx",
+  "verilog",
+  "wgsl",
+  "yaml",
+}
+
 -- Set any to false that you want disabled in here.
 -- take a look at the autocommands file in lua/config for more information
 -- Default value is true if left blank
@@ -318,6 +372,7 @@ M.custom_conf = function()
   -- windline statusbar
   -- require("wlsample.evil_line")
   -- require("wlsample.airline")
+  --
 end
 
 return M
