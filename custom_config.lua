@@ -230,6 +230,7 @@ M.enable_plugins = {
   hop = true,
   img_clip = true,
   indent_blankline = true,
+  indent_blankline_rainbow = true,
   lsp = true,
   lazydev = true,
   neoscroll = true,
@@ -320,7 +321,7 @@ M.lsp_configs = {
       Lua = {
         diagnostics = {
           disable = { "missing-fields" },
-          globals = { "vim" }, -- CyberNvim didn't configure this so lua_ls would warn about it
+          globals = { "vim" },
         },
         hint = {
           enable = true,
@@ -372,7 +373,6 @@ M.custom_conf = function()
   -- windline statusbar
   -- require("wlsample.evil_line")
   -- require("wlsample.airline")
-  --
 end
 
 return M
