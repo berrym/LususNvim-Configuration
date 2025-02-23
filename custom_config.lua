@@ -363,16 +363,19 @@ M.custom_conf = function()
 
   -- set color scheme
   -- utils.colors("catppuccin")
-  -- utils.colors("tokyonight")
+  utils.colors("tokyonight")
   -- utils.colors("nightfox")
   -- utils.colors("astrotheme")
   -- utils.colors("astromars")
+  -- utils.colors("monokai-pro")
   -- utils.colors("monokai-pro-machine")
   -- utils.colors("monokai-pro-octagon")
 
   -- windline statusbar
   -- require("wlsample.evil_line")
   -- require("wlsample.airline")
+  --
+  require("custom.usercommands")
 end
 
 return M
